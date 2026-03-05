@@ -50,21 +50,21 @@ Our d-MRV engine operates on a hierarchical validation stack:
 
 ```mermaid
 graph TD
-    A[01_initialize_h3_grid.R] -->|Generate| B(Res 8, 10, 12 Hierarchy)
-    A -->|Verify| A1[01a_validate_h3_grid.R]
+    A["01_initialize_h3_grid.R"] -->|Generate| B("Res 8, 10, 12 Hierarchy")
+    A -->|Verify| A1["01a_validate_h3_grid.R"]
     
-    B --> C[02_fetch_satellite_data.R]
-    C -->|Batch Task| D{Google Earth Engine}
-    D -->|Export CSV| E[/rgee/ Folder]
+    B --> C["02_fetch_satellite_data.R"]
+    C -->|Batch Task| D{"Google Earth Engine"}
+    D -->|Export CSV| E["/rgee/ Folder"]
     
-    E --> F[02a_process_satellite_data.R]
-    F -->|Enrich| G(Hierarchical RDS/GPKG)
+    E --> F["02a_process_satellite_data.R"]
+    F -->|Enrich| G("Hierarchical RDS/GPKG")
     
-    G --> H[02b_visualize_satellite_data.R]
-    H -->|HTML Map| I(Satellite Evidence Map)
+    G --> H["02b_visualize_satellite_data.R"]
+    H -->|HTML Map| I("Satellite Evidence Map")
     
-    G --> J[03_process_dmrv_logic.R]
-    J -->|Biomass/MRV| K(Final d-MRV Result)
+    G --> J["03_process_dmrv_logic.R"]
+    J -->|Biomass/MRV| K("Final d-MRV Result")
 ```
 
 ## 📋 Today's Development Plan
