@@ -37,6 +37,7 @@ Instead of a top-down averaging approach, **Ray** uses a high-precision **Bottom
 | **Res 13** | 44 m² | 0.4 pixels | Overkill (Redundant) |
 
 ## 📊 Data Extraction & Analysis Logic
+
 Our d-MRV engine operates on a hierarchical validation stack:
 1.  **Scanner Level (Res 12):** Precision MRV using Sentinel-1/2 fusion.
 2.  **Container Aggregation (Res 10):** Collective Integrity (90% threshold for "Verified" status).
