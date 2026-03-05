@@ -1,6 +1,9 @@
 # [[revorest-ray]] (R-Eye) Scanning Engine
 
 **Revorest-Ray** is the high-precision scanning engine of the Revorest protocol. It acts as the "eye" that interprets satellite data into structured, scientifically-validated evidence for the Digital MRV (d-MRV) ledger.
+
+![Res 12 Scanner Unit Preview](res12_preview.png)
+
 ## 🔬 Scientific Foundations
 This engine is built upon established forest monitoring and allometric research:
 
